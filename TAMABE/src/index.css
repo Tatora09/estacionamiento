@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;605;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Professional Polish Color Palette */
+  --color-duoc-navy: #0F172A; /* Slate 900 */
+  --color-duoc-gold: #FACC15; /* Yellow 400 */
+  --color-duoc-yellow: #FEF08A; /* Yellow 200 */
+  --color-duoc-gray-light: #F8FAFC; /* Slate 50 */
+  --color-duoc-gray-dark: #0F172A;
+  --color-duoc-amber: #F59E0B; /* Amber 500 */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC; /* Slate 50 */
+  color: #0F172A; /* Slate 900 */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elegant animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
+
+.stripe-bg {
+  background-image: repeating-linear-gradient(45deg, #F1F5F9 0px, #F1F5F9 8px, #E2E8F0 8px, #E2E8F0 16px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Estacionamiento Duoc UC Maipú",
+  "description": "Sistema inteligente de gestión de estacionamientos para la sede Duoc UC Maipú, que incluye mapa interactivo de 110 espacios, perfiles de conductor, guardia y jefatura, simulación de códigos QR y reporte de estadísticas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
